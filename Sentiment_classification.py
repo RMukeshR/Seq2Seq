@@ -7,7 +7,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 
-# print("ok")
+print("ok")
 
 imdb_data = pd.read_table("dataset/imdb_labelled.txt", names = ['sentence', 'label'])
 amazon_data = pd.read_table("dataset/amazon_cells_labelled.txt", names = ['sentence', 'label'])
@@ -81,8 +81,8 @@ def clean(data):
     return cleaned_data
 
 
-# clean_data = clean(data)
+clean_data = clean(data)
 
 
-# print(data[:5])
-# print(clean_data[:5])
+print(data[:5])
+print(clean_data[:5])
